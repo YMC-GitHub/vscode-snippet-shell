@@ -1,0 +1,40 @@
+{
+ "name": "vscode-snippet-shell-yemiancheng",
+ "displayName": "vscode-snippet-shell-yemiancheng",
+ "description": "a basic shell snippet",
+ "version": "1.0.0",
+ "categories": [
+  "Snippets"
+ ],
+ "contributes": {
+  "snippets": [
+   {
+    "language": "shellscript",
+    "path": "./.vscode/shellscript.code-snippets"
+   }
+  ]
+ },
+ "main": "./.vscode/shellscript.code-snippets",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/ymc-github/vscode-snippet-shell.git"
+ },
+ "author": "yemiancheng <ymc.github@gmail.com> (https://github.com/YMC-GitHub)",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/ymc-github/vscode-snippet-shell/issues"
+ },
+ "homepage": "https://github.com/ymc-github/vscode-snippet-shell#readme",
+ "files": [
+  ".vscode/*",
+  "package.json",
+  "readme.md"
+ ],
+ "devDependencies": {
+  "@commitlint/cli": "^8.1.0",
+  "commitlint-config-yemiancheng": "^1.0.0"
+ },
+ "scripts": {
+     "commitlint":"cat ./.git/COMMIT_EDITMSG | ./node_modules/.bin/commitlint"
+ }
+}
