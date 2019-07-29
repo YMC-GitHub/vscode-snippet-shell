@@ -2,7 +2,7 @@
  "name": "vscode-snippet-shell-yemiancheng",
  "displayName": "vscode-snippet-shell-yemiancheng",
  "description": "a basic shell snippet",
- "version": "1.0.1",
+ "version": "1.0.2",
  "categories": [
   "Snippets"
  ],
@@ -37,5 +37,8 @@
  "scripts": {
      "commitlint":"cat ./.git/COMMIT_EDITMSG | ./node_modules/.bin/commitlint"
  },
- "publisher": "yemiancheng"
+ "publisher": "yemiancheng",
+ "engines": {
+  "vscode": "^1.34.0"
+  }
 }

@@ -29,7 +29,6 @@
 		],
 		"description": "文件头部 K Shell"
 	},
-	/*	
 	"run_code_as_exe": {
 		"prefix": "run_code_as_exe",
 		"body": [
@@ -51,7 +50,6 @@
 		],
 		"description": "变量定义"
 	},
-	*/
 	"var_read": {
 		"prefix": "var_read",
 		"body": [
