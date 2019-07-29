@@ -1,0 +1,541 @@
+{
+	"file_head_A": {
+		"prefix": "file_head_A",
+		"body": [
+			"#!/bin/bash"
+		],
+		"description": "文件头部 Bourne Again Shell"
+	},
+	"file_head_B": {
+	 	"prefix": "file_head_B",
+	 	"body": [
+	 		"#!/usr/bin/sh",
+			 "# or ",
+	 		 "#!/bin/sh"
+	 	],
+	 	"description": "文件头部 Bourne Shell"
+	 },
+	 "file_head_C": {
+		"prefix": "file_head_C",
+		"body": [
+			"#!/usr/bin/csh"
+		],
+		"description": "文件头部 C Shell"
+	},
+	"file_head_K": {
+		"prefix": "file_head_k",
+		"body": [
+			"#!/usr/bin/ksh"
+		],
+		"description": "文件头部 K Shell"
+	},
+	/*	
+	"run_code_as_exe": {
+		"prefix": "run_code_as_exe",
+		"body": [
+			"chmod +x ${name:$file_path}"
+		],
+		"description": "运行代码 以可执行程序方式"
+	},
+	"run_code_with_shell": {
+		"prefix": "run_code_with_shell",
+		"body": [
+			"/bin/bash ./file_path.sh"
+		],
+		"description": "运行代码 作为解释器的参数"
+	},	
+	"var_define": {
+		"prefix": "var_define",
+		"body": [
+			"var_name=value"
+		],
+		"description": "变量定义"
+	},
+	*/
+	"var_read": {
+		"prefix": "var_read",
+		"body": [
+			"$$var_name"
+		],
+		"description": "变量读取"
+	},
+	"var_set_readonly": {
+		"prefix": "var_set_readonly",
+		"body": [
+			"readonly var_name"
+		],
+		"description": "变量设置 只读变量"
+	},
+	"var_delete": {
+		"prefix": "var_delete",
+		"body": [
+			"unset var_name"
+		],
+		"description": "变量删除"
+	},
+	"arr_define_1d": {
+		"prefix": "arr_define_1d",
+		"body": [
+			"array_name=(",
+			" value0",
+			" value1",
+			")"
+		],
+		"description": "数组：定义一维数组"
+	},
+	"arr_read_1d": {
+		"prefix": "arr_read_1d",
+		"body": [
+			"${array_name[index]}"
+		],
+		"description": "数组：读取一维数组"
+	},
+	"arr_get_length_1d": {
+		"prefix": "arr_get_length_1d",
+		"body": [
+			"${#array_name[@]}",
+			"# or ",
+			"#${#my_array[*]}"		
+		],
+		"description": "数组：获取一维数组长度"
+	},
+	"arr_get_values_1d": {
+		"prefix": "arr_get_values_1d",
+		"body": [
+			"${array_name[@]}",
+			"# or ",
+			"#${my_array[*]}"		
+		],
+		"description": "数组：获取一维数组元素"
+	},
+	"arr_define_2d": {
+		"prefix": "arr_define_2d",
+		"body": [
+			"declare -A array_name",
+			"array_name=(",
+			" [key1]=value1",
+			" [key2]=value2",
+			")"
+		],
+		"description": "数组：定义二维数组"
+	},
+	"comment_line": {
+		"prefix": "comment_line",
+		"body": [
+			"# commment_here .."
+		],
+		"description": "单行注释"
+	},
+	"comment_multi_line": {
+		"prefix": "comment_multi_line",
+		"body": [
+			":<<EOF",
+			" commment_here ..",
+			" commment_here ..",
+			"EOF"
+		],
+		"description": "注释：插入多行注释"
+	},
+	"arg_get_length": {
+		"prefix": "arg_get_length",
+		"body": [
+			"$#"
+		],
+		"description": "参数：获取参数-返回参数个数"
+	},
+	"arg_get_all_in_string_1": {
+		"prefix": "arg_get_all_in_string_1",
+		"body": [
+			"$*"
+		],
+		"description": "参数：获取参数-以一个单字符串显示所有向脚本传递的参数"
+	},
+	"arg_get_all_in_string_2": {
+		"prefix": "arg_get_all_in_string_2",
+		"body": [
+			"\"$@\""
+		],
+		"description": "参数：获取参数-在引号中返回每个参数"
+	},
+	"arg_current_process_id": {
+		"prefix": "arg_current_process_id",
+		"body": [
+			"$$"
+		],
+		"description": "参数：获取参数-脚本运行的当前进程ID号"
+	},
+	"arg_last_process_id": {
+		"prefix": "arg_last_process_id",
+		"body": [
+			"$!"
+		],
+		"description": "参数：获取参数-后台运行的最后一个进程的ID号"
+	},
+	"arg_show_current_options": {
+		"prefix": "arg_show_current_options",
+		"body": [
+			"$-"
+		],
+		"description": "参数：获取参数-显示Shell使用的当前选项"
+	},
+	"arg_show_last_exit_status": {
+		"prefix": "arg_show_last_exit_status",
+		"body": [
+			"$?"
+		],
+		"description": "参数：获取参数-显示最后命令的退出状态。"
+	},
+	"math_add": {
+		"prefix": "math_add",
+		"body": [
+			"`expr $$a + $$b`"
+		],
+		"description": "算数运算：加法 $a + $b"
+	},
+	"math_sub": {
+		"prefix": "math_sub",
+		"body": [
+			"`expr $$a - $$b` "
+		],
+		"description": "算数运算：减法 $a - $b"
+	},
+	"math_multi": {
+		"prefix": "math_multi",
+		"body": [
+			"`expr $$a \\* $$b` "
+		],
+		"description": "算数运算：乘法 $a * $b"
+	},
+	"math_devide": {
+		"prefix": "math_devide",
+		"body": [
+			"`expr $$a / $$b` "
+		],
+		"description": "算数运算：除法 $a / $b"
+	},
+	"math_mod": {
+		"prefix": "math_mod",
+		"body": [
+			"`expr $$a % $$b` "
+		],
+		"description": "算数运算：取余 $a % $b"
+	},
+	"math_euqal": {
+		"prefix": "math_euqal",
+		"body": [
+			"[ $$a == $$b ]"
+		],
+		"description": "算数运算：相等 [$a == $b]"
+	},
+	"math_not_euqal": {
+		"prefix": "math_not_euqal",
+		"body": [
+			"[ $$a != $$b ]"
+		],
+		"description": "算数运算：不等 [$a != $b]"
+	},
+	"relation_euqal": {
+		"prefix": "relation_euqal",
+		"body": [
+			"[ $$a -eq $$b ]"
+		],
+		"description": "关系运算：相等 [$a -eq $b]"
+	},
+	"relation_not_euqal": {
+		"prefix": "relation_not_euqal",
+		"body": [
+			"[ $$a -ne $$b ]"
+		],
+		"description": "关系运算：不等 [$a -ne $b]"
+	},
+	"relation_large_than": {
+		"prefix": "relation_large_than",
+		"body": [
+			"[ $$a -gt $$b ]"
+		],
+		"description": "关系运算：大于 [$a -gt $b]"
+	},
+	"relation_not_large_than": {
+		"prefix": "relation_not_large_than",
+		"body": [
+			"[ $$a -le $$b ]"
+		],
+		"description": "关系运算：不大于 [$a -le $b]"
+	},
+	"relation_less_than": {
+		"prefix": "relation_less_than",
+		"body": [
+			"[ $$a -lt $$b ]"
+		],
+		"description": "关系运算：小于 [$a -lt $b]"
+	},
+	"relation_not_less_than": {
+		"prefix": "relation_not_less_than",
+		"body": [
+			"[ $$a -ge $$b ]"
+		],
+		"description": "关系运算：不小于 [$a -ge $b]"
+	},
+	"bool_not": {
+		"prefix": "bool_not",
+		"body": [
+			"[ $$a != $$b ]"
+		],
+		"description": "布尔运算：非 [ $a != $b ]"
+	},
+	"bool_or": {
+		"prefix": "bool_or",
+		"body": [
+			"[ $$a -o $$b ]"
+		],
+		"description": "布尔运算：或 [ $a -o $b ]"
+	},
+	"bool_and": {
+		"prefix": "bool_and",
+		"body": [
+			"[ $$a -a $$b ]"
+		],
+		"description": "布尔运算：与 [ $a -a $b ]"
+	},
+	"logic_or": {
+		"prefix": "logic_or",
+		"body": [
+			"[[ $$a && $$b ]]"
+		],
+		"description": "逻辑运算：或 [[ $a && $b ]]"
+	},
+	"logic_and": {
+		"prefix": "logic_and",
+		"body": [
+			"[[ $$a || $$b ]]"
+		],
+		"description": "逻辑运算：与 [[ $a || $b ]]"
+	},
+	"char_equal": {
+		"prefix": "char_equal",
+		"body": [
+			"[ $$a = $$b ]"
+		],
+		"description": "字符运算：相等 [ $a = $b ]"
+	},
+	"char_not_equal": {
+		"prefix": "char_not_equal",
+		"body": [
+			"[ $$a != $$b ]"
+		],
+		"description": "字符运算：不等 [ $a != $b ]"
+	},
+	"char_check_length_is_zero": {
+		"prefix": "char_check_length_is_zero",
+		"body": [
+			"[ -z $$a ]"
+		],
+		"description": "字符运算：长度为空 [ -z $a ]"
+	},
+	"char_check_length_is_not_zero": {
+		"prefix": "char_check_length_is_not_zero",
+		"body": [
+			"[ -n \"$$a\" ]"
+		],
+		"description": "字符运算：长度非空 [ -n \"$a\" ] "
+	},
+	"char_content_is_not_zero": {
+		"prefix": "char_content_is_not_zero",
+		"body": [
+			"[ $$a ]"
+		],
+		"description": "字符运算：内容非空 [ $a ]"
+	},
+	"file_is_block": {
+		"prefix": "file_is_block",
+		"body": [
+			"[ -b $$file ]"
+		],
+		"description": "文件检测：是否是块设备文件 [ -b $file ]"
+	},
+	"file_is_char": {
+		"prefix": "file_is_char",
+		"body": [
+			"[ -c $$file ]"
+		],
+		"description": "文件检测：是否是字符设备文件 [ -c $file ]"
+	},
+	"file_is_diretory": {
+		"prefix": "file_is_diretory",
+		"body": [
+			"[ -d $$file ]"
+		],
+		"description": "文件检测：是否是目录 [ -d $file ]"
+	},
+	"file_is_nomarl": {
+		"prefix": "file_is_nomarl",
+		"body": [
+			"[ -f $$file ]"
+		],
+		"description": "文件检测：是否是普通文件（既不是目录，也不是设备文件） [ -f $file ]"
+	},
+	"file_is_readable": {
+		"prefix": "file_is_readable",
+		"body": [
+			"[ -r $$file ]"
+		],
+		"description": "文件检测：是否可读 [ -r $file ]"
+	},
+	"file_is_writeable": {
+		"prefix": "file_is_writeable",
+		"body": [
+			"[ -w $$file ]"
+		],
+		"description": "文件检测：是否可写 [ -w $file ]"
+	},
+	"file_is_execeable": {
+		"prefix": "file_is_execeable",
+		"body": [
+			"[ -x $$file ]"
+		],
+		"description": "文件检测：是否可执 [ -x $file ]"
+	},
+	"file_is_not_zereo_size": {
+		"prefix": "file_is_not_zereo_size",
+		"body": [
+			"[ -s $$file ]"
+		],
+		"description": "文件检测：大小非空 [ -s $file ]"
+	},
+	"file_exsites": {
+		"prefix": "file_exsites",
+		"body": [
+			"[ -e $$file ]"
+		],
+		"description": "文件检测：是否存在 [ -e $file ]"
+	},
+	"echo_mode_c": {
+		"prefix": "echo_mode_c",
+		"body": [
+			"echo -e $$var_name"
+		],
+		"description": "打印字符：开启转译 echo -e \"OK! \n\""
+	},
+	"echo_mode_not_c": {
+		"prefix": "echo_mode_not_c",
+		"body": [
+			"echo $$var_name"
+		],
+		"description": "打印字符：关闭转译 echo \"OK! \n\""
+	},
+	"read_input_from_tty": {
+		"prefix": "read_input_from_tty",
+		"body": [
+			"read -p \"your tips here:\" -n $$char_limit -t $$time_limit -s password"
+		],
+		"description": "读取输入：读取命令行输入的内容"
+	},
+	"if_multiline": {
+		"prefix": "if_multiline",
+		"body": [
+			"if condition",
+			"then",
+			"    command1",
+			"    command2",
+			"fi"
+		],
+		"description": "条件语句：if 多行写法"
+	},
+	"if_oneline": {
+		"prefix": "if_oneline",
+		"body": [
+			"if condition ; then command1; fi"
+		],
+		"description": "条件语句：if 一行写法"
+	},
+	"for_multiline": {
+		"prefix": "for_multiline",
+		"body": [
+			"for condition",
+			"do",
+			"    command1",
+			"    command2",
+			"done"
+		],
+		"description": "循环语句：for 多行写法"
+	},
+	"for_oneline": {
+		"prefix": "for_oneline",
+		"body": [
+			"for condition ; do command1; done"
+		],
+		"description": "循环语句：for 一行写法"
+	},
+	"while_multiline": {
+		"prefix": "while_multiline",
+		"body": [
+			"while condition",
+			"do",
+			"    command1",
+			"    command2",
+			"done"
+		],
+		"description": "循环语句：while 多行写法"
+	},
+	"until_multiline": {
+		"prefix": "until_multiline",
+		"body": [
+			"until condition",
+			"do",
+			"    command1",
+			"    command2",
+			"done"
+		],
+		"description": "循环语句：until 多行写法"
+	},
+	"function_define": {
+		"prefix": "function_define",
+		"body": [
+			"function fun_name(arg1,arg2...){",
+			"    action1;",
+			"    action2;",
+			"    return value;",
+			"}"
+		],
+		"description": "循环语句：until 多行写法"
+	},
+	"io_redirect_to_file_overide": {
+		"prefix": "io_redirect_to_file_overide",
+		"body": [
+			"command > $$file_path"
+		],
+		"description": "输入输出重新定向：输出到指定文件 覆盖方式"
+	},
+	"io_redirect_to_file_append": {
+		"prefix": "io_redirect_to_file_append",
+		"body": [
+			"command >> $$file_path"
+		],
+		"description": "输入输出重新定向：输出到指定文件 追加方式"
+	},
+	"io_redirect_from_file": {
+		"prefix": "io_redirect_from_file",
+		"body": [
+			"command < $$file_path"
+		],
+		"description": "输入输出重新定向：从指定文件输入"
+	},
+	"io_redirect_from_tty": {
+		"prefix": "io_redirect_from_tty",
+		"body": [
+			"command << command-eof",
+			"  #write some command here",
+			"command-eof"       
+		],
+		"description": "输入输出重新定向：从tty输入"
+	},
+	"file_include": {
+		"prefix": "file_include",
+		"body": [
+			". $$file_path",
+			"# or",
+			"#source $$file_path"       
+		],
+		"description": "文件包含"
+	}
+}
