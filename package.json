@@ -2,7 +2,7 @@
  "name": "vscode-snippet-shell-yemiancheng",
  "displayName": "vscode-snippet-shell-yemiancheng",
  "description": "a basic shell snippet",
- "version": "1.0.0",
+ "version": "1.0.1",
  "categories": [
   "Snippets"
  ],
