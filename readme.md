@@ -5,9 +5,9 @@
 a basic java snippet for vscode editor by yemiancheng
 
 ## feat
-- [√] syntax
-- [x] data structure
-- [x] algorithm
+- [x] syntax
+- [] data structure
+- [] algorithm
 
 ## author
 
