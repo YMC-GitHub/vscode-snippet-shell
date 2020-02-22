@@ -1,6 +1,22 @@
 # vscode-snippet-shell
 
-> a basic shell snippet for vscode editor by yemiancheng
+## desc
+
+a basic java snippet for vscode editor by yemiancheng
+
+## feat
+- [√] syntax
+- [x] data structure
+- [x] algorithm
+
+## author
+
+yemiancheng <ymc-github@gmail.com>
+
+## license
+
+MIT
+
 
 ## reference
 
