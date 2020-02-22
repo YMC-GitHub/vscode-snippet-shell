@@ -1,0 +1,48 @@
+{
+  "arr_define_1d": {
+    "prefix": "arr_define_1d",
+    "body": [
+      "array_name=(",
+      " value0",
+      " value1",
+      ")"
+    ],
+    "description": "数组：定义一维数组"
+  },
+  "arr_read_1d": {
+    "prefix": "arr_read_1d",
+    "body": [
+      "${array_name[index]}"
+    ],
+    "description": "数组：读取一维数组"
+  },
+  "arr_get_length_1d": {
+    "prefix": "arr_get_length_1d",
+    "body": [
+      "${#array_name[@]}",
+      "# or ",
+      "#${#my_array[*]}"
+    ],
+    "description": "数组：获取一维数组长度"
+  },
+  "arr_get_values_1d": {
+    "prefix": "arr_get_values_1d",
+    "body": [
+      "${array_name[@]}",
+      "# or ",
+      "#${my_array[*]}"
+    ],
+    "description": "数组：获取一维数组元素"
+  },
+  "arr_define_2d": {
+    "prefix": "arr_define_2d",
+    "body": [
+      "declare -A array_name",
+      "array_name=(",
+      " [key1]=value1",
+      " [key2]=value2",
+      ")"
+    ],
+    "description": "数组：定义二维数组"
+  }
+}

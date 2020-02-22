@@ -1,0 +1,65 @@
+{
+  "file_is_block": {
+    "prefix": "file_is_block",
+    "body": [
+      "[ -b $$file ]"
+    ],
+    "description": "文件检测：是否是块设备文件 [ -b $file ]"
+  },
+  "file_is_char": {
+    "prefix": "file_is_char",
+    "body": [
+      "[ -c $$file ]"
+    ],
+    "description": "文件检测：是否是字符设备文件 [ -c $file ]"
+  },
+  "file_is_diretory": {
+    "prefix": "file_is_diretory",
+    "body": [
+      "[ -d $$file ]"
+    ],
+    "description": "文件检测：是否是目录 [ -d $file ]"
+  },
+  "file_is_nomarl": {
+    "prefix": "file_is_nomarl",
+    "body": [
+      "[ -f $$file ]"
+    ],
+    "description": "文件检测：是否是普通文件（既不是目录，也不是设备文件） [ -f $file ]"
+  },
+  "file_is_readable": {
+    "prefix": "file_is_readable",
+    "body": [
+      "[ -r $$file ]"
+    ],
+    "description": "文件检测：是否可读 [ -r $file ]"
+  },
+  "file_is_writeable": {
+    "prefix": "file_is_writeable",
+    "body": [
+      "[ -w $$file ]"
+    ],
+    "description": "文件检测：是否可写 [ -w $file ]"
+  },
+  "file_is_execeable": {
+    "prefix": "file_is_execeable",
+    "body": [
+      "[ -x $$file ]"
+    ],
+    "description": "文件检测：是否可执 [ -x $file ]"
+  },
+  "file_is_not_zereo_size": {
+    "prefix": "file_is_not_zereo_size",
+    "body": [
+      "[ -s $$file ]"
+    ],
+    "description": "文件检测：大小非空 [ -s $file ]"
+  },
+  "file_exsites": {
+    "prefix": "file_exsites",
+    "body": [
+      "[ -e $$file ]"
+    ],
+    "description": "文件检测：是否存在 [ -e $file ]"
+  }
+}

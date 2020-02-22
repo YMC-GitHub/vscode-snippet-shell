@@ -1,0 +1,13 @@
+{
+  "until_multiline": {
+    "prefix": "until_multiline",
+    "body": [
+      "until condition",
+      "do",
+      "    command1",
+      "    command2",
+      "done"
+    ],
+    "description": "循环语句：until 多行写法"
+  }
+}

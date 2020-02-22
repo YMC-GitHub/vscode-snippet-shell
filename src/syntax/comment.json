@@ -1,0 +1,19 @@
+{
+  "comment_line": {
+    "prefix": "comment_line",
+    "body": [
+      "# commment_here .."
+    ],
+    "description": "单行注释"
+  },
+  "comment_multi_line": {
+    "prefix": "comment_multi_line",
+    "body": [
+      ":<<EOF",
+      " commment_here ..",
+      " commment_here ..",
+      "EOF"
+    ],
+    "description": "注释：插入多行注释"
+  }
+}

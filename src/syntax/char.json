@@ -1,0 +1,44 @@
+{
+  "char_equal": {
+    "prefix": "char_equal",
+    "body": [
+      "[ $$a = $$b ]"
+    ],
+    "description": "字符运算：相等 [ $a = $b ]"
+  },
+  "char_not_equal": {
+    "prefix": "char_not_equal",
+    "body": [
+      "[ $$a != $$b ]"
+    ],
+    "description": "字符运算：不等 [ $a != $b ]"
+  },
+  "char_check_length_is_zero": {
+    "prefix": "char_check_length_is_zero",
+    "body": [
+      "[ -z $$a ]"
+    ],
+    "description": "字符运算：长度为空 [ -z $a ]"
+  },
+  "char_check_length_is_not_zero": {
+    "prefix": "char_check_length_is_not_zero",
+    "body": [
+      "[ -n \"$$a\" ]"
+    ],
+    "description": "字符运算：长度非空 [ -n \"$a\" ] "
+  },
+  "char_content_is_not_zero": {
+    "prefix": "char_content_is_not_zero",
+    "body": [
+      "[ $$a ]"
+    ],
+    "description": "字符运算：内容非空 [ $a ]"
+  },
+  "char_tr": {
+    "prefix": "char_tr_to_upper",
+    "body": [
+      "echo \"$$MODE\" | tr \"[:upper:]\" \"[:lower:]\"",
+    ],
+    "description": "字符运算：-转为小写"
+  }
+}

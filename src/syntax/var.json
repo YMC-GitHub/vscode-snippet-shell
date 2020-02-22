@@ -1,0 +1,30 @@
+{
+  "var_define": {
+    "prefix": "var_define",
+    "body": [
+      "var_name=value"
+    ],
+    "description": "变量定义"
+  },
+  "var_read": {
+    "prefix": "var_read",
+    "body": [
+      "$$var_name"
+    ],
+    "description": "变量读取"
+  },
+  "var_set_readonly": {
+    "prefix": "var_set_readonly",
+    "body": [
+      "readonly var_name"
+    ],
+    "description": "变量设置 只读变量"
+  },
+  "var_delete": {
+    "prefix": "var_delete",
+    "body": [
+      "unset var_name"
+    ],
+    "description": "变量删除"
+  }
+}

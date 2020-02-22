@@ -1,0 +1,16 @@
+{
+  "run_code_as_exe": {
+    "prefix": "run_code_as_exe",
+    "body": [
+      "chmod +x ${name:$file_path}"
+    ],
+    "description": "运行代码 以可执行程序方式"
+  },
+  "run_code_with_shell": {
+    "prefix": "run_code_with_shell",
+    "body": [
+      "/bin/bash ./file_path.sh"
+    ],
+    "description": "运行代码 作为解释器的参数"
+  }
+}

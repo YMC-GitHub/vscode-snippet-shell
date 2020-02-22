@@ -1,0 +1,32 @@
+{
+  "file_head_A": {
+    "prefix": "file_head_A",
+    "body": [
+      "#!/bin/bash"
+    ],
+    "description": "文件头部 Bourne Again Shell"
+  },
+  "file_head_B": {
+    "prefix": "file_head_B",
+    "body": [
+      "#!/usr/bin/sh",
+      "# or ",
+      "#!/bin/sh"
+    ],
+    "description": "文件头部 Bourne Shell"
+  },
+  "file_head_C": {
+    "prefix": "file_head_C",
+    "body": [
+      "#!/usr/bin/csh"
+    ],
+    "description": "文件头部 C Shell"
+  },
+  "file_head_K": {
+    "prefix": "file_head_k",
+    "body": [
+      "#!/usr/bin/ksh"
+    ],
+    "description": "文件头部 K Shell"
+  }
+}

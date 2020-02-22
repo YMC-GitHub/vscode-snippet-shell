@@ -1,0 +1,51 @@
+{
+  "arg_get_length": {
+    "prefix": "arg_get_length",
+    "body": [
+      "$#"
+    ],
+    "description": "参数：获取参数-返回参数个数"
+  },
+  "arg_get_all_in_string_1": {
+    "prefix": "arg_get_all_in_string_1",
+    "body": [
+      "$*"
+    ],
+    "description": "参数：获取参数-以一个单字符串显示所有向脚本传递的参数"
+  },
+  "arg_get_all_in_string_2": {
+    "prefix": "arg_get_all_in_string_2",
+    "body": [
+      "\"$@\""
+    ],
+    "description": "参数：获取参数-在引号中返回每个参数"
+  },
+  "arg_current_process_id": {
+    "prefix": "arg_current_process_id",
+    "body": [
+      "$$"
+    ],
+    "description": "参数：获取参数-脚本运行的当前进程ID号"
+  },
+  "arg_last_process_id": {
+    "prefix": "arg_last_process_id",
+    "body": [
+      "$!"
+    ],
+    "description": "参数：获取参数-后台运行的最后一个进程的ID号"
+  },
+  "arg_show_current_options": {
+    "prefix": "arg_show_current_options",
+    "body": [
+      "$-"
+    ],
+    "description": "参数：获取参数-显示Shell使用的当前选项"
+  },
+  "arg_show_last_exit_status": {
+    "prefix": "arg_show_last_exit_status",
+    "body": [
+      "$?"
+    ],
+    "description": "参数：获取参数-显示最后命令的退出状态。"
+  }
+}

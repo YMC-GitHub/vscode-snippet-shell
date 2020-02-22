@@ -1,0 +1,16 @@
+{
+  "echo_mode_c": {
+    "prefix": "echo_mode_c",
+    "body": [
+      "echo -e $$var_name"
+    ],
+    "description": "打印字符：开启转译 echo -e \"OK! \n\""
+  },
+  "echo_mode_not_c": {
+    "prefix": "echo_mode_not_c",
+    "body": [
+      "echo $$var_name"
+    ],
+    "description": "打印字符：关闭转译 echo \"OK! \n\""
+  }
+}

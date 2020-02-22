@@ -1,0 +1,13 @@
+{
+  "function_define": {
+    "prefix": "function_define",
+    "body": [
+      "function fun_name(arg1,arg2...){",
+      "    action1;",
+      "    action2;",
+      "    return value;",
+      "}"
+    ],
+    "description": "函数定义："
+  }
+}

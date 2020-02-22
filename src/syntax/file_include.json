@@ -1,0 +1,11 @@
+{
+  "file_include": {
+    "prefix": "file_include",
+    "body": [
+      ". $$file_path",
+      "# or",
+      "#source $$file_path"
+    ],
+    "description": "文件包含"
+  }
+}

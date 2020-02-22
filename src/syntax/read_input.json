@@ -1,0 +1,9 @@
+{
+  "read_input_from_tty": {
+    "prefix": "read_input_from_tty",
+    "body": [
+      "read -p \"your tips here:\" -n $$char_limit -t $$time_limit -s password"
+    ],
+    "description": "读取输入：读取命令行输入的内容"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "for_multiline": {
+    "prefix": "for_multiline",
+    "body": [
+      "for condition",
+      "do",
+      "    command1",
+      "    command2",
+      "done"
+    ],
+    "description": "循环语句：for 多行写法"
+  },
+  "for_oneline": {
+    "prefix": "for_oneline",
+    "body": [
+      "for condition ; do command1; done"
+    ],
+    "description": "循环语句：for 一行写法"
+  }
+}

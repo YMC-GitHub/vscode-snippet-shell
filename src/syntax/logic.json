@@ -1,0 +1,16 @@
+{
+  "logic_or": {
+    "prefix": "logic_or",
+    "body": [
+      "[[ $$a && $$b ]]"
+    ],
+    "description": "逻辑运算：或 [[ $a && $b ]]"
+  },
+  "logic_and": {
+    "prefix": "logic_and",
+    "body": [
+      "[[ $$a || $$b ]]"
+    ],
+    "description": "逻辑运算：与 [[ $a || $b ]]"
+  }
+}

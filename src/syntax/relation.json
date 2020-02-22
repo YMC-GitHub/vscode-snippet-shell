@@ -1,0 +1,44 @@
+{
+  "relation_euqal": {
+    "prefix": "relation_euqal",
+    "body": [
+      "[ $$a -eq $$b ]"
+    ],
+    "description": "关系运算：相等 [$a -eq $b]"
+  },
+  "relation_not_euqal": {
+    "prefix": "relation_not_euqal",
+    "body": [
+      "[ $$a -ne $$b ]"
+    ],
+    "description": "关系运算：不等 [$a -ne $b]"
+  },
+  "relation_large_than": {
+    "prefix": "relation_large_than",
+    "body": [
+      "[ $$a -gt $$b ]"
+    ],
+    "description": "关系运算：大于 [$a -gt $b]"
+  },
+  "relation_not_large_than": {
+    "prefix": "relation_not_large_than",
+    "body": [
+      "[ $$a -le $$b ]"
+    ],
+    "description": "关系运算：不大于 [$a -le $b]"
+  },
+  "relation_less_than": {
+    "prefix": "relation_less_than",
+    "body": [
+      "[ $$a -lt $$b ]"
+    ],
+    "description": "关系运算：小于 [$a -lt $b]"
+  },
+  "relation_not_less_than": {
+    "prefix": "relation_not_less_than",
+    "body": [
+      "[ $$a -ge $$b ]"
+    ],
+    "description": "关系运算：不小于 [$a -ge $b]"
+  }
+}

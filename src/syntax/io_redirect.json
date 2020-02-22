@@ -1,0 +1,32 @@
+{
+  "io_redirect_to_file_overide": {
+    "prefix": "io_redirect_to_file_overide",
+    "body": [
+      "command > $$file_path"
+    ],
+    "description": "输入输出重新定向：输出到指定文件 覆盖方式"
+  },
+  "io_redirect_to_file_append": {
+    "prefix": "io_redirect_to_file_append",
+    "body": [
+      "command >> $$file_path"
+    ],
+    "description": "输入输出重新定向：输出到指定文件 追加方式"
+  },
+  "io_redirect_from_file": {
+    "prefix": "io_redirect_from_file",
+    "body": [
+      "command < $$file_path"
+    ],
+    "description": "输入输出重新定向：从指定文件输入"
+  },
+  "io_redirect_from_tty": {
+    "prefix": "io_redirect_from_tty",
+    "body": [
+      "command << command-eof",
+      "  #write some command here",
+      "command-eof"
+    ],
+    "description": "输入输出重新定向：从tty输入"
+  }
+}

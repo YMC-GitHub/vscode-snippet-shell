@@ -1,0 +1,23 @@
+{
+  "bool_not": {
+    "prefix": "bool_not",
+    "body": [
+      "[ $$a != $$b ]"
+    ],
+    "description": "布尔运算：非 [ $a != $b ]"
+  },
+  "bool_or": {
+    "prefix": "bool_or",
+    "body": [
+      "[ $$a -o $$b ]"
+    ],
+    "description": "布尔运算：或 [ $a -o $b ]"
+  },
+  "bool_and": {
+    "prefix": "bool_and",
+    "body": [
+      "[ $$a -a $$b ]"
+    ],
+    "description": "布尔运算：与 [ $a -a $b ]"
+  }
+}

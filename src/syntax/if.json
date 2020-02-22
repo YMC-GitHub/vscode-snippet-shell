@@ -1,0 +1,20 @@
+{
+  "if_multiline": {
+    "prefix": "if_multiline",
+    "body": [
+      "if condition",
+      "then",
+      "    command1",
+      "    command2",
+      "fi"
+    ],
+    "description": "条件语句：if 多行写法"
+  },
+  "if_oneline": {
+    "prefix": "if_oneline",
+    "body": [
+      "if condition ; then command1; fi"
+    ],
+    "description": "条件语句：if 一行写法"
+  }
+}

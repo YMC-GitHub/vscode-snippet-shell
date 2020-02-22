@@ -1,0 +1,51 @@
+{
+  "math_add": {
+    "prefix": "math_add",
+    "body": [
+      "`expr $$a + $$b`"
+    ],
+    "description": "算数运算：加法 $a + $b"
+  },
+  "math_sub": {
+    "prefix": "math_sub",
+    "body": [
+      "`expr $$a - $$b` "
+    ],
+    "description": "算数运算：减法 $a - $b"
+  },
+  "math_multi": {
+    "prefix": "math_multi",
+    "body": [
+      "`expr $$a \\* $$b` "
+    ],
+    "description": "算数运算：乘法 $a * $b"
+  },
+  "math_devide": {
+    "prefix": "math_devide",
+    "body": [
+      "`expr $$a / $$b` "
+    ],
+    "description": "算数运算：除法 $a / $b"
+  },
+  "math_mod": {
+    "prefix": "math_mod",
+    "body": [
+      "`expr $$a % $$b` "
+    ],
+    "description": "算数运算：取余 $a % $b"
+  },
+  "math_euqal": {
+    "prefix": "math_euqal",
+    "body": [
+      "[ $$a == $$b ]"
+    ],
+    "description": "算数运算：相等 [$a == $b]"
+  },
+  "math_not_euqal": {
+    "prefix": "math_not_euqal",
+    "body": [
+      "[ $$a != $$b ]"
+    ],
+    "description": "算数运算：不等 [$a != $b]"
+  }
+}
