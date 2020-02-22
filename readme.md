@@ -6,8 +6,8 @@ a basic java snippet for vscode editor by yemiancheng
 
 ## feat
 - [x] syntax
-- [] data structure
-- [] algorithm
+- [ ] data structure
+- [ ] algorithm
 
 ## author
 
